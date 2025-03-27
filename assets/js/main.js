@@ -37,6 +37,7 @@ const sendEmail = (e) => {
     contactMessage.textContent = ''
   }, 5000);
   },(error) =>{
+    // Show error message
       console.error('EmailJS Error:', error);
     // Show error message
    contactMessage.textContent = `Failed to send message. Please email me directly at narmada.viveka@gmail.com`;
