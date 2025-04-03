@@ -196,6 +196,7 @@ img {
   position: absolute;
   justify-self: center;
   align-self: flex-end;
+  animation: slide 3s infinite;
 }
 
 .perfil__data{
@@ -897,7 +898,18 @@ color: var(--text-color);
   .scrollup{
     right: 4rem;
   }
+}
+@keyframes slide{
+  
+  0% {
+    transform: translateY(0);
+  }
 
+  50% {
+    transform: translateY(-50px);
+  }
 
-
+  100% {
+    transform: translateY(0);
+  }
 }
